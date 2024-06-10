@@ -14,7 +14,7 @@ function App() {
       setIsLoading(true);
 
       try {
-        const response = await fetch('http://52.23.178.19/goals');
+        const response = await fetch('http://172.210.60.90/goals');
 
         const resData = await response.json();
 
@@ -39,7 +39,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://52.23.178.19/goals', {
+      const response = await fetch('http://172.210.60.90/goals', {
         method: 'POST',
         body: JSON.stringify({
           text: goalText,
@@ -78,7 +78,7 @@ function App() {
     setIsLoading(true);
 
     try {
-      const response = await fetch('http://52.23.178.19/goals/' + goalId, {
+      const response = await fetch('http://172.210.60.90/goals/' + goalId, {
         method: 'DELETE',
       });
 
